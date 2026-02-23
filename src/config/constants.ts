@@ -3,8 +3,8 @@
  * Centralizes magic numbers and limits for easy maintenance.
  */
 
-/** Maximum logo file size in bytes (2 MB). */
-export const MAX_LOGO_FILE_SIZE = 2 * 1024 * 1024;
+/** Maximum logo file size in bytes (10 MB). */
+export const MAX_LOGO_FILE_SIZE = 10 * 1024 * 1024;
 
 /** Accepted image MIME types for logo upload. */
 export const ACCEPTED_IMAGE_TYPES = ["image/png", "image/jpeg", "image/svg+xml", "image/webp"];

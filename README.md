@@ -6,7 +6,7 @@ A customizable, web-based QR code generator built with React and TypeScript. Gen
 
 - **12 Style Presets** — Classic, Rounded, Ocean, Sunset, Forest, Midnight, Neon, Royal Purple, Coral, Monochrome, Dots, and Classy
 - **Full Customization** — Colors, gradients (linear/radial), dot shapes, corner styles, and QR size (200–1200px)
-- **Logo Embedding** — Drag-and-drop a logo (PNG, JPEG, SVG, WebP up to 2 MB) into the center of the QR code
+- **Logo Embedding** — Drag-and-drop a logo (PNG, JPEG, SVG, WebP up to 10 MB) into the center of the QR code
 - **Error Correction Levels** — L, M, Q, H — adjust scannability when using logos
 - **Export** — Download as PNG or SVG
 - **Responsive UI** — Works on desktop and mobile

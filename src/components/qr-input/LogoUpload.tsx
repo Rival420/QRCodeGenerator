@@ -98,7 +98,7 @@ export function LogoUpload({
               : "Sleep een logo naar hier of klik om te bladeren"}
           </p>
           <p className="text-xs text-muted-foreground">
-            PNG, JPEG, SVG of WebP (max. 2 MB)
+            PNG, JPEG, SVG of WebP (max. 10 MB)
           </p>
         </div>
       )}
