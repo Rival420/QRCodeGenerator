@@ -12,8 +12,8 @@ import type { GradientConfig, GradientType } from "@/types/qr";
 
 /** Gradient type options. */
 const GRADIENT_TYPE_OPTIONS: { value: GradientType; label: string }[] = [
-  { value: "linear", label: "Linear" },
-  { value: "radial", label: "Radial" },
+  { value: "linear", label: "Lineair" },
+  { value: "radial", label: "Radiaal" },
 ];
 
 interface GradientControlsProps {
@@ -53,7 +53,7 @@ export function GradientControls({
           onChange={(e) => onToggle(e.target.checked)}
           className="h-4 w-4 rounded border-input accent-primary cursor-pointer"
         />
-        <Label htmlFor="gradient-toggle">Use Gradient</Label>
+        <Label htmlFor="gradient-toggle">Verloop gebruiken</Label>
       </div>
 
       {enabled && (
@@ -68,7 +68,7 @@ export function GradientControls({
 
           <div className="grid grid-cols-2 gap-3">
             <div className="space-y-1.5">
-              <Label htmlFor="grad-start">Start Color</Label>
+              <Label htmlFor="grad-start">Startkleur</Label>
               <div className="flex items-center gap-2">
                 <input
                   type="color"
@@ -92,7 +92,7 @@ export function GradientControls({
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="grad-end">End Color</Label>
+              <Label htmlFor="grad-end">Eindkleur</Label>
               <div className="flex items-center gap-2">
                 <input
                   type="color"

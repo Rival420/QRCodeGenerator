@@ -19,7 +19,7 @@ interface SelectedPreviewProps {
 export function SelectedPreview({ options, onDownloadReady }: SelectedPreviewProps) {
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className="rounded-xl border border-border bg-white p-4 shadow-sm">
+      <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
         <QRCodeCanvas
           options={options}
           onDownloadReady={onDownloadReady}
@@ -27,7 +27,7 @@ export function SelectedPreview({ options, onDownloadReady }: SelectedPreviewPro
       </div>
       {!options.data && (
         <p className="text-sm text-muted-foreground">
-          Enter content above to generate your QR code
+          Voer hierboven inhoud in om je QR-code te genereren
         </p>
       )}
     </div>

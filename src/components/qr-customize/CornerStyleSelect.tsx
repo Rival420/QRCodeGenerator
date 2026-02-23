@@ -10,15 +10,15 @@ import type { CornerSquareType, CornerDotType } from "@/types/qr";
 
 /** Corner square shape options. */
 const CORNER_SQUARE_OPTIONS: { value: CornerSquareType; label: string }[] = [
-  { value: "square", label: "Square" },
-  { value: "dot", label: "Dot" },
-  { value: "extra-rounded", label: "Extra Rounded" },
+  { value: "square", label: "Vierkant" },
+  { value: "dot", label: "Punt" },
+  { value: "extra-rounded", label: "Extra afgerond" },
 ];
 
 /** Corner dot shape options. */
 const CORNER_DOT_OPTIONS: { value: CornerDotType; label: string }[] = [
-  { value: "square", label: "Square" },
-  { value: "dot", label: "Dot" },
+  { value: "square", label: "Vierkant" },
+  { value: "dot", label: "Punt" },
 ];
 
 interface CornerStyleSelectProps {
@@ -42,7 +42,7 @@ export function CornerStyleSelect({
   return (
     <div className="grid grid-cols-2 gap-3">
       <div className="space-y-1.5">
-        <Label htmlFor="corner-square">Corner Frame</Label>
+        <Label htmlFor="corner-square">Hoekkader</Label>
         <Select
           id="corner-square"
           value={cornerSquareType}
@@ -51,7 +51,7 @@ export function CornerStyleSelect({
         />
       </div>
       <div className="space-y-1.5">
-        <Label htmlFor="corner-dot">Corner Dot</Label>
+        <Label htmlFor="corner-dot">Hoekpunt</Label>
         <Select
           id="corner-dot"
           value={cornerDotType}

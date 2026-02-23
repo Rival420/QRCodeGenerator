@@ -10,12 +10,12 @@ import type { DotType } from "@/types/qr";
 
 /** All available dot types with human-readable labels. */
 const DOT_TYPE_OPTIONS: { value: DotType; label: string }[] = [
-  { value: "square", label: "Square" },
-  { value: "rounded", label: "Rounded" },
-  { value: "dots", label: "Dots" },
+  { value: "square", label: "Vierkant" },
+  { value: "rounded", label: "Afgerond" },
+  { value: "dots", label: "Punten" },
   { value: "classy", label: "Classy" },
-  { value: "classy-rounded", label: "Classy Rounded" },
-  { value: "extra-rounded", label: "Extra Rounded" },
+  { value: "classy-rounded", label: "Classy afgerond" },
+  { value: "extra-rounded", label: "Extra afgerond" },
 ];
 
 interface DotStyleSelectProps {
@@ -29,7 +29,7 @@ interface DotStyleSelectProps {
 export function DotStyleSelect({ value, onChange }: DotStyleSelectProps) {
   return (
     <div className="space-y-1.5">
-      <Label htmlFor="dot-style">Dot Style</Label>
+      <Label htmlFor="dot-style">Puntstijl</Label>
       <Select
         id="dot-style"
         value={value}

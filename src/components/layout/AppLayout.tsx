@@ -20,7 +20,7 @@ export function AppLayout({ children }: AppLayoutProps) {
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <div className="container mx-auto px-4 py-6">{children}</div>
+        <div className="container mx-auto max-w-5xl px-4 py-8">{children}</div>
       </main>
       <Footer />
     </div>

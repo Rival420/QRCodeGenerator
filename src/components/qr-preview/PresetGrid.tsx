@@ -37,7 +37,7 @@ export function PresetGrid({
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-lg">Style Presets</CardTitle>
+        <CardTitle className="text-lg">Stijlvoorinstellingen</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">

@@ -20,7 +20,7 @@ interface DataInputProps {
 export function DataInput({ value, onChange }: DataInputProps) {
   return (
     <div className="space-y-2">
-      <Label htmlFor="qr-data">Content to encode</Label>
+      <Label htmlFor="qr-data">Te encoderen inhoud</Label>
       <Input
         id="qr-data"
         type="text"
@@ -30,7 +30,7 @@ export function DataInput({ value, onChange }: DataInputProps) {
         autoComplete="off"
       />
       <p className="text-xs text-muted-foreground">
-        Enter a URL, text, email, phone number, or any data to encode.
+        Voer een URL, tekst, e-mail, telefoonnummer of andere gegevens in.
       </p>
     </div>
   );

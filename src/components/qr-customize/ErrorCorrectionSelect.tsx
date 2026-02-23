@@ -12,10 +12,10 @@ import type { ErrorCorrectionLevel } from "@/types/qr";
 
 /** Error correction options with descriptions. */
 const EC_OPTIONS: { value: ErrorCorrectionLevel; label: string }[] = [
-  { value: "L", label: "L - Low (7%)" },
-  { value: "M", label: "M - Medium (15%)" },
-  { value: "Q", label: "Q - Quartile (25%)" },
-  { value: "H", label: "H - High (30%)" },
+  { value: "L", label: "L - Laag (7%)" },
+  { value: "M", label: "M - Gemiddeld (15%)" },
+  { value: "Q", label: "Q - Kwartiel (25%)" },
+  { value: "H", label: "H - Hoog (30%)" },
 ];
 
 interface ErrorCorrectionSelectProps {
@@ -37,7 +37,7 @@ export function ErrorCorrectionSelect({
 
   return (
     <div className="space-y-1.5">
-      <Label htmlFor="error-correction">Error Correction</Label>
+      <Label htmlFor="error-correction">Foutcorrectie</Label>
       <Select
         id="error-correction"
         value={value}
@@ -48,7 +48,7 @@ export function ErrorCorrectionSelect({
         <div className="flex items-start gap-1.5 text-xs text-amber-600">
           <AlertTriangle className="h-3.5 w-3.5 mt-0.5 shrink-0" />
           <span>
-            With a logo, use Q or H for reliable scanning. The logo covers part of the QR data.
+            Met een logo: gebruik Q of H voor betrouwbaar scannen. Het logo bedekt een deel van de QR-gegevens.
           </span>
         </div>
       )}

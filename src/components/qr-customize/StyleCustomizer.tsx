@@ -40,19 +40,19 @@ export function StyleCustomizer({
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-lg">Customize</CardTitle>
+        <CardTitle className="text-lg">Aanpassen</CardTitle>
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="colors">
           <TabsList className="w-full">
             <TabsTrigger value="colors" className="flex-1">
-              Colors
+              Kleuren
             </TabsTrigger>
             <TabsTrigger value="shapes" className="flex-1">
-              Shapes
+              Vormen
             </TabsTrigger>
             <TabsTrigger value="advanced" className="flex-1">
-              Advanced
+              Geavanceerd
             </TabsTrigger>
           </TabsList>
 
@@ -60,7 +60,7 @@ export function StyleCustomizer({
           <TabsContent value="colors" className="space-y-4 pt-4">
             <ColorPicker
               id="dot-color"
-              label="Dot Color"
+              label="Puntkleur"
               value={options.dotsOptions.color}
               onChange={(color) =>
                 onOptionsChange({
@@ -70,7 +70,7 @@ export function StyleCustomizer({
             />
             <ColorPicker
               id="bg-color"
-              label="Background Color"
+              label="Achtergrondkleur"
               value={options.backgroundOptions.color}
               onChange={(color) =>
                 onOptionsChange({
@@ -80,7 +80,7 @@ export function StyleCustomizer({
             />
             <ColorPicker
               id="corner-color"
-              label="Corner Color"
+              label="Hoekkleur"
               value={options.cornersSquareOptions.color}
               onChange={(color) =>
                 onOptionsChange({

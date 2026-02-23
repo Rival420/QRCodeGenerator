@@ -49,27 +49,27 @@ export function LogoUpload({
 
   return (
     <div className="space-y-2">
-      <Label>Logo (optional)</Label>
+      <Label>Logo (optioneel)</Label>
 
       {logo ? (
         /* Preview state: show thumbnail + filename + remove button */
         <div className="flex items-center gap-3 rounded-md border border-border p-3">
           <img
             src={logo}
-            alt="Logo preview"
+            alt="Logo-voorvertoning"
             className="h-12 w-12 rounded object-contain bg-muted"
           />
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium truncate">{logoFilename}</p>
             <p className="text-xs text-muted-foreground">
-              Logo will appear in the center of the QR code
+              Het logo verschijnt in het midden van de QR-code
             </p>
           </div>
           <Button
             variant="ghost"
             size="icon"
             onClick={onRemove}
-            aria-label="Remove logo"
+            aria-label="Logo verwijderen"
           >
             <X className="h-4 w-4" />
           </Button>
@@ -94,11 +94,11 @@ export function LogoUpload({
           )}
           <p className="text-sm text-muted-foreground text-center">
             {isDragActive
-              ? "Drop your logo here"
-              : "Drag & drop a logo, or click to browse"}
+              ? "Laat je logo hier los"
+              : "Sleep een logo naar hier of klik om te bladeren"}
           </p>
           <p className="text-xs text-muted-foreground">
-            PNG, JPEG, SVG, or WebP (max 2 MB)
+            PNG, JPEG, SVG of WebP (max. 2 MB)
           </p>
         </div>
       )}

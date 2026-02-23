@@ -20,7 +20,7 @@ export function SizeSlider({ value, onChange }: SizeSliderProps) {
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between">
-        <Label htmlFor="qr-size">Output Size</Label>
+        <Label htmlFor="qr-size">Uitvoergrootte</Label>
         <span className="text-sm text-muted-foreground font-mono">
           {value} x {value}px
         </span>

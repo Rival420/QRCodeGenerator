@@ -56,7 +56,7 @@ export function DownloadButton({
         ) : (
           <Download className="h-4 w-4" />
         )}
-        {isDownloading ? "Downloading..." : "Download QR Code"}
+        {isDownloading ? "Bezig met downloaden…" : "QR-code downloaden"}
       </Button>
     </div>
   );

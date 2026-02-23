@@ -52,7 +52,7 @@ export function QRCodeCanvas({ options, size, className, onDownloadReady }: QRCo
         )}
         style={{ width: size, height: size }}
       >
-        Enter content to preview
+        Voer inhoud in om te previewen
       </div>
     );
   }

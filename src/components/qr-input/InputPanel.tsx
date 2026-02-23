@@ -42,7 +42,7 @@ export function InputPanel({
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-lg">QR Code Content</CardTitle>
+        <CardTitle className="text-lg">Inhoud voor QR-code</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <DataInput value={data} onChange={onDataChange} />
